@@ -1,0 +1,3 @@
+rootProject.name = "mlkitscanner"
+include ':app'
+include ':barcode'
