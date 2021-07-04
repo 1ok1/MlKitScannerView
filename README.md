@@ -102,7 +102,11 @@ allprojects {
 
 > Options: 
 > ```mlKitScannerView?.showInfo()``` to show debug frame info
+
 > ```mlKitScannerView?.hideInfo()``` to hide debug frame info
+
 > ```mlKitScannerView?.showDetection()``` to show the detection frame with value
+
 > ```mlKitScannerView?.hideDetection()``` to hide the detection frame with value
+
 > ```mlKitScannerView?.stopCameraSource()``` Stops the camera source
