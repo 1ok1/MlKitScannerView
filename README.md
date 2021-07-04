@@ -101,6 +101,7 @@ allprojects {
 ```
 
 > Options: 
+
 > ```mlKitScannerView?.showInfo()``` to show debug frame info
 
 > ```mlKitScannerView?.hideInfo()``` to hide debug frame info
