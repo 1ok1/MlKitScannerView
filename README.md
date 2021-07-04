@@ -4,37 +4,40 @@ MlKitScannerView uses Camera2 and Google Vision library to scan the Qr code
 
 > Step1: Add it in your root build.gradle at the end of repositories:
 ```
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+   allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+   }
 ```
+
 > Step2: Add the dependency to app build.gradle
 ```
-    implementation 'com.github.1ok1:MlKitScannerView:main-SNAPSHOT'
+   implementation 'com.github.1ok1:MlKitScannerView:main-SNAPSHOT'
 ```
+
 > Step3: Add MlKitScannerView to your xml
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+   <?xml version="1.0" encoding="utf-8"?>
+   <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:app="http://schemas.android.com/apk/res-auto"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	tools:context=".MainActivity">
 
-    <com.ikol.barcode.MlKitScannerView
-        android:id="@+id/mlKitScannerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+	<com.ikol.barcode.MlKitScannerView
+	   android:id="@+id/mlKitScannerView"
+       	   android:layout_width="0dp"
+	   android:layout_height="0dp"
+	   app:layout_constraintBottom_toBottomOf="parent"
+	   app:layout_constraintLeft_toLeftOf="parent"
+	   app:layout_constraintRight_toRightOf="parent"
+	   app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
 > Step4: Add the integration code to the Activity or fragment
 
 ```
