@@ -13,7 +13,7 @@ allprojects {
 ```
 > Step2: Add the dependency to app build.gradle
 ```
-    implementation 'com.github.1ok1:MlKitScannerView:master-SNAPSHOT'
+    implementation 'com.github.1ok1:MlKitScannerView:main-SNAPSHOT'
 ```
 > Step3: Add MlKitScannerView to your xml
 ```
@@ -99,3 +99,10 @@ allprojects {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
 ```
+
+> Options: 
+> ```mlKitScannerView?.showInfo()``` to show debug frame info
+> ```mlKitScannerView?.hideInfo()``` to hide debug frame info
+> ```mlKitScannerView?.showDetection()``` to show the detection frame with value
+> ```mlKitScannerView?.hideDetection()``` to hide the detection frame with value
+> ```mlKitScannerView?.stopCameraSource()``` Stops the camera source
